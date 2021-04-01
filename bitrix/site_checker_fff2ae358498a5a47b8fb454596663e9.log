@@ -1,0 +1,200 @@
+2021-Apr-01 15:49:31 Наличие необходимых модулей php (check_php_modules): Fail
+Ошибка! Не установлены требуемые расширения:Поддержка XML
+2021-Apr-01 15:49:31 Обязательные параметры PHP (check_php_settings): Ok
+Настройки правильные
+2021-Apr-01 15:49:31 Модули веб-сервера (check_security): Ok
+Конфликтов не выявлено
+2021-Apr-01 15:49:31 Значения переменных сервера (check_server_vars): Ok
+Корректные
+2021-Apr-01 15:49:31 Сохранение сессии (check_session): Ok
+50% done
+2021-Apr-01 15:49:31 Сохранение сессии (check_session): Ok
+Успешно
+2021-Apr-01 15:49:31 Параметры настройки UTF (mbstring и константа BX_UTF) (check_mbstring): Ok
+Правильные. Сайт работает в UTF кодировке
+2021-Apr-01 15:49:31 Служебные скрипты в корне сайта (check_install_scripts): Ok
+Отсутствуют
+2021-Apr-01 15:49:31 Работа с сокетами (check_socket): Ok
+Connection to cert.test:80	Success
+
+Успешно
+2021-Apr-01 15:49:31 Выполнение агентов на cron (check_bx_crontab): Warning
+Замечание. Агенты выполняются на хитах, рекомендуется перевести выполнение агентов на cron
+2021-Apr-01 15:49:31 Параметры подключения к базе данных (check_dbconn_settings): Ok
+Успешно
+2021-Apr-01 15:49:31 Лишний вывод в файлах конфигурации (check_dbconn): Ok
+Connection to cert.test:80	Success
+
+Успешно
+2021-Apr-01 15:49:31 Сохранение сессии без UserAgent (check_session_ua): Ok
+50% done
+Connection to cert.test:80	Success
+
+2021-Apr-01 15:49:31 Сохранение сессии без UserAgent (check_session_ua): Ok
+Connection to cert.test:80	Success
+
+Успешно
+2021-Apr-01 15:49:31 Настройки сайтов (check_sites): Ok
+Правильные
+2021-Apr-01 15:49:31 Передача объектов по ссылке (check_clone): Ok
+Успешно
+2021-Apr-01 15:49:31 Размер стека и pcre.recursion_limit (check_pcre_recursion): Ok
+Connection to cert.test:80	Success
+
+Успешно
+2021-Apr-01 15:49:31 Загрузка файла (check_upload): Ok
+Connection to cert.test:80	Success
+
+Успешно
+2021-Apr-01 15:49:31 Загрузка файла больше 4Мб (check_upload_big): Fail
+Connection to cert.test:80	Success
+== Request ==
+POST /bitrix/admin/site_checker.php?test_type=upload_test&unique_id=1dd54cc0a4df074e12b56c95863987cb&big=1&raw=0 HTTP/1.1
+Host: cert.test
+Content-Type: multipart/form-data; boundary=--------2f6a16a07a0911f6f228951c99f5caf9
+Content-Length: 4200195
+
+----------2f6a16a07a0911f6f228951c99f5caf9
+Content-Disposition: form-data; name="test_file"; filename="site_checker.bin
+Content-Type: image/gif
+
+()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~����������������������������������������������������������������������������������������������������������������()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~����������������������������������������������������������������������������������������������������������������()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~�������������������������������������������������������������������������������������������������������������� ... (4200448 bytes)
+== Response ==
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Thu, 01 Apr 2021 08:49:31 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+
+== Body ==
+move_uploaded_file(,/var/www/certificate1/bitrix/tmp/site_checker.bin)=false
+$_FILES=
+Array
+(
+    [test_file] => Array
+        (
+            [name] => site_checker.bin
+            [type] => 
+            [tmp_name] => 
+            [error] => 1
+            [size] => 0
+        )
+
+)
+
+==========
+
+Ошибка! Не работает
+2021-Apr-01 15:49:31 Загрузка файла через php://input (check_upload_raw): Ok
+Connection to cert.test:80	Success
+
+Успешно
+2021-Apr-01 15:49:31 Передача POST запроса с большим числом параметров (check_post): Ok
+Connection to cert.test:80	Success
+
+Успешно
+2021-Apr-01 15:49:31 Отправка почты (check_mail): Fail
+Ошибка! Не работает
+2021-Apr-01 15:49:31 Отправка почтового сообщения больше 64Кб (check_mail_big): Fail
+Ошибка! Не работает
+2021-Apr-01 15:49:31 Проверка на наличие неотправленных сообщений (check_mail_b_event): Ok
+Успешно
+2021-Apr-01 15:49:31 Внутреннее перенаправление (функция LocalRedirect) (check_localredirect): Ok
+50% done
+Connection to cert.test:80	Success
+
+2021-Apr-01 15:49:31 Внутреннее перенаправление (функция LocalRedirect) (check_localredirect): Ok
+Connection to cert.test:80	Success
+
+Успешно
+2021-Apr-01 15:49:31 Фактическое ограничение памяти (check_memory_limit): Ok
+20% done
+Connection to cert.test:80	Success
+
+2021-Apr-01 15:49:31 Фактическое ограничение памяти (check_memory_limit): Ok
+40% done
+Connection to cert.test:80	Success
+
+2021-Apr-01 15:49:31 Фактическое ограничение памяти (check_memory_limit): Ok
+60% done
+Connection to cert.test:80	Success
+
+2021-Apr-01 15:49:31 Фактическое ограничение памяти (check_memory_limit): Ok
+80% done
+Connection to cert.test:80	Success
+
+2021-Apr-01 15:49:31 Фактическое ограничение памяти (check_memory_limit): Ok
+Connection to cert.test:80	Success
+
+Не менее 256 М
+2021-Apr-01 15:49:31 Работа с файлами кеша (check_cache): Ok
+Успешно
+2021-Apr-01 15:49:32 Доступ к серверу обновлений (check_update): Ok
+Успешно
+2021-Apr-01 15:49:32 HTTP авторизация (check_http_auth): Ok
+Connection to cert.test:80	Success
+
+Успешно
+2021-Apr-01 15:49:32 Создание и запуск файла (check_exec): Ok
+Connection to cert.test:80	Success
+
+Успешно
+2021-Apr-01 15:49:32 Функция getimagesize для swf (check_getimagesize): Ok
+Успешно
+2021-Apr-01 15:49:32 Версия MySQL-сервера (check_mysql_bug_version): Ok
+Успешно
+2021-Apr-01 15:49:33 Время на БД и веб-сервере (check_mysql_time): Ok
+Успешно
+2021-Apr-01 15:49:33 Режим работы MySQL (check_mysql_mode): Ok
+Успешно
+2021-Apr-01 15:49:33 Кодировка соединения (check_mysql_connection_charset): Ok
+character_set_connection=utf8, collation_connection=utf8_unicode_ci, character_set_results=utf8
+Успешно
+2021-Apr-01 15:49:33 Кодировка базы данных (check_mysql_db_charset): Ok
+CHARSET=utf8, COLLATION=utf8_unicode_ci
+Успешно
+2021-Apr-01 15:49:33 Кодировки таблиц в БД (check_mysql_table_charset): Ok
+Успешно
+2021-Apr-01 15:49:33 Структура базы данных (check_mysql_table_structure): Ok
+0% done
+2021-Apr-01 15:49:33 Структура базы данных (check_mysql_table_structure): Ok
+4% done
+2021-Apr-01 15:49:34 Структура базы данных (check_mysql_table_structure): Ok
+8% done
+2021-Apr-01 15:49:34 Структура базы данных (check_mysql_table_structure): Ok
+12% done
+2021-Apr-01 15:49:34 Структура базы данных (check_mysql_table_structure): Ok
+16% done
+2021-Apr-01 15:49:34 Структура базы данных (check_mysql_table_structure): Ok
+20% done
+2021-Apr-01 15:49:34 Структура базы данных (check_mysql_table_structure): Ok
+24% done
+2021-Apr-01 15:49:35 Структура базы данных (check_mysql_table_structure): Ok
+28% done
+2021-Apr-01 15:49:35 Структура базы данных (check_mysql_table_structure): Ok
+32% done
+2021-Apr-01 15:49:35 Структура базы данных (check_mysql_table_structure): Ok
+36% done
+2021-Apr-01 15:49:35 Структура базы данных (check_mysql_table_structure): Ok
+40% done
+2021-Apr-01 15:49:35 Структура базы данных (check_mysql_table_structure): Ok
+44% done
+2021-Apr-01 15:49:36 Структура базы данных (check_mysql_table_structure): Ok
+48% done
+2021-Apr-01 15:49:36 Структура базы данных (check_mysql_table_structure): Ok
+52% done
+2021-Apr-01 15:49:36 Структура базы данных (check_mysql_table_structure): Ok
+56% done
+2021-Apr-01 15:49:36 Структура базы данных (check_mysql_table_structure): Ok
+60% done
+2021-Apr-01 15:49:39 Структура базы данных (check_mysql_table_structure): Ok
+64% done
+2021-Apr-01 15:49:39 Структура базы данных (check_mysql_table_structure): Ok
+68% done
+2021-Apr-01 15:49:39 Структура базы данных (check_mysql_table_structure): Ok
+72% done
+2021-Apr-01 15:49:39 Структура базы данных (check_mysql_table_structure): Ok
+76% done
+2021-Apr-01 15:49:40 Структура базы данных (check_mysql_table_structure): Ok
+80% done
